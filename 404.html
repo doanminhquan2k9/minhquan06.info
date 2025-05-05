@@ -381,7 +381,7 @@
   </div>
 
   <script>
-    // Tạo các icon trôi nổi
+    
     document.addEventListener('DOMContentLoaded', function() {
       const iconsContainer = document.getElementById('floating-icons');
       const icons = [
@@ -393,29 +393,29 @@
         const icon = document.createElement('div');
         icon.className = `floating-icon fas ${icons[Math.floor(Math.random() * icons.length)]}`;
         
-        // Vị trí ngẫu nhiên
+       
         icon.style.left = `${Math.random() * 100}%`;
         icon.style.top = `${Math.random() * 100}%`;
         
-        // Kích thước ngẫu nhiên
+        
         const size = Math.random() * 20 + 10;
         icon.style.fontSize = `${size}px`;
         
-        // Thời gian animation ngẫu nhiên
+        
         const duration = Math.random() * 30 + 20;
         icon.style.animationDuration = `${duration}s`;
         
-        // Độ trễ ngẫu nhiên
+       
         icon.style.animationDelay = `${Math.random() * 10}s`;
         
-        // Màu sắc ngẫu nhiên
+        
         const colors = ['#ff9e00', '#00b4d8', '#0077b6', '#38b000', '#ff6d00'];
         icon.style.color = colors[Math.floor(Math.random() * colors.length)];
         
         iconsContainer.appendChild(icon);
       }
       
-      // Hiệu ứng hover container
+      
       const container = document.querySelector('.container');
       container.addEventListener('mousemove', (e) => {
         const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
